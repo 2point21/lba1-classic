@@ -1,0 +1,4 @@
+
+#define MAX_SIZE_BRICK_CUBE 361472
+#define OFFSET_GRM_HQR 120
+
