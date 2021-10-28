@@ -1,7 +1,7 @@
-;*��������������������������������������������������������������������������*
+;*ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ*
 ;				S_POLY.ASM 386
 ;			      (c) Adeline 1993
-;*��������������������������������������������������������������������������*
+;*ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ*
 		.486p
 		jumps
 		.model SMALL, SYSCALL
@@ -88,12 +88,12 @@ offtabpoly	dd	offset	TabPoly
 		public	 NoLanguage	ComputeSphere
 		public	 NoLanguage	ComputeSphere_A
 
-;*��������������������������������������������������������������������������*
-;                     ����� ����� �   � ����� ����� �����
-;                     ����� ����� ����� ����  ����� ����
-;                     ����� ��    ��  � ����� ��  � �����
-;*��������������������������������������������������������������������������*
-;*��������������������������������������������������������������������������*
+;*ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ*
+;                     ΓûêΓûêΓûÇΓûÇΓûÇ ΓûêΓûÇΓûÇΓûÇΓûê Γûê   Γûê ΓûêΓûÇΓûÇΓûÇΓûÇ ΓûêΓûÇΓûÇΓûÇΓûê ΓûêΓûÇΓûÇΓûÇΓûÇ
+;                     ΓûÇΓûÇΓûÇΓûÇΓûê ΓûêΓûêΓûÇΓûÇΓûÇ ΓûêΓûêΓûÇΓûÇΓûê ΓûêΓûêΓûÇΓûÇ  ΓûêΓûêΓûÇΓûêΓûÇ ΓûêΓûêΓûÇΓûÇ
+;                     ΓûÇΓûÇΓûÇΓûÇΓûÇ ΓûÇΓûÇ    ΓûÇΓûÇ  ΓûÇ ΓûÇΓûÇΓûÇΓûÇΓûÇ ΓûÇΓûÇ  ΓûÇ ΓûÇΓûÇΓûÇΓûÇΓûÇ
+;*ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ*
+;*ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ*
 
 ComputeSphere	proc	uses esi edi ebp ebx,\
 		pxc:DWORD, pyc:DWORD, rayon:DWORD
@@ -108,7 +108,7 @@ ComputeSphere	proc	uses esi edi ebp ebx,\
 
 ComputeSphere	endp
 
-;*��������������������������������������������������������������������������*
+;*ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ*
 
 ComputeSphere_A	proc				; uses si di bp
 
@@ -368,12 +368,12 @@ nosphere:	xor	eax, eax
 ComputeSphere_A	endp
 
 
-;*��������������������������������������������������������������������������*
-;               ����� ����� �     �  �� ����� ����� ��� � �����
-;               ����� ��  � ��    ���   �� �� ��  � ����� ����
-;		��    ����� ����� ��    ����� ����� ��  � �����
-;*��������������������������������������������������������������������������*
-;*��������������������������������������������������������������������������*
+;*ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ*
+;               ΓûêΓûÇΓûÇΓûÇΓûê ΓûêΓûÇΓûÇΓûÇΓûê Γûê     Γûê  ΓûäΓûÇ ΓûêΓûÇΓûÇΓûÇΓûÇ ΓûêΓûÇΓûÇΓûÇΓûê ΓûêΓûêΓûä Γûê ΓûêΓûÇΓûÇΓûÇΓûÇ
+;               ΓûêΓûêΓûÇΓûÇΓûÇ ΓûêΓûê  Γûê ΓûêΓûê    ΓûêΓûêΓûÇ   ΓûêΓûê ΓûÇΓûê ΓûêΓûê  Γûê ΓûêΓûêΓûÇΓûêΓûê ΓûêΓûêΓûÇΓûÇ
+;		ΓûÇΓûÇ    ΓûÇΓûÇΓûÇΓûÇΓûÇ ΓûÇΓûÇΓûÇΓûÇΓûÇ ΓûÇΓûÇ    ΓûÇΓûÇΓûÇΓûÇΓûÇ ΓûÇΓûÇΓûÇΓûÇΓûÇ ΓûÇΓûÇ  ΓûÇ ΓûÇΓûÇΓûÇΓûÇΓûÇ
+;*ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ*
+;*ΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇ*
 
 ComputePoly_A	proc	uses	edi ebx
 
@@ -430,7 +430,7 @@ tt3:
 		mov	esi, [offtabpoly]	; offset TabPoly
 
 		movsw
-		movsd				; transitivit� der point
+		movsd				; transitivit├⌐ der point
 
 		mov	[Ymin], bp
 		mov	[Xmax], dx
@@ -556,7 +556,7 @@ gtg0:		mov	al, [last_intensite]
 
 		jl	y_monte
 
-;������������������������������������������������������������������������
+;┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖
 ; Y descend donc buffer gauche
 
 		mov	bp, ax
@@ -620,7 +620,7 @@ lt01:		stosw
 		dec	ecx
 		jnz	lt0
 
-; � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �
+; ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖
 ; fill tab coul G
 
 		cmp	word ptr[ TypePoly ], POLY_GOURAUD
@@ -667,7 +667,7 @@ gtg3:           cld
 		ret
 
 
-;������������������������������������������������������������������������
+;┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖
 
 ftg0:
 		neg	ah
@@ -694,7 +694,7 @@ xloopg01:	stosw
 		dec	ecx
 		jnz	xloopg0
 
-;������������������������������������������������������������������������
+;┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖
 
 		cld
 		pop	cx			; XY1 = XY2
@@ -707,7 +707,7 @@ xloopg01:	stosw
 		ret
 
 
-;������������������������������������������������������������������������
+;┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖
 
 same_y:
 		mov	bp, dx
@@ -740,7 +740,7 @@ same_y:
 		mov	eax, 1			; ok poly drawed (perhaps clipped)
 		ret
 
-;������������������������������������������������������������������������
+;┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖
 ; Y monte donc buffer droit
 
 y_monte:	mov	bp, cx
@@ -802,7 +802,7 @@ lt01m:		stosw				; stock X
 		dec	ecx
 		jnz	lt0m
 
-; � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � � �
+; ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖ ┬╖
 ; fill tab coul D
 
 		cmp	word ptr[ TypePoly ], POLY_GOURAUD
@@ -839,7 +839,7 @@ xloop1:		stosw
 		dec	ecx
 		jnz	xloop
 
-;������������������������������������������������������������������������
+;┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖
 gtg3m:          cld
 		pop	cx			; XY1 = XY2
 		pop	bx
@@ -850,7 +850,7 @@ gtg3m:          cld
 		mov	eax, 1			; ok poly drawed (perhaps clipped)
 		ret
 
-;������������������������������������������������������������������������
+;┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖
 
 ftd0:
 		neg	ah
@@ -876,7 +876,7 @@ xloopn1:	stosw
 		dec	ecx
 		jnz	xloopn
 
-;������������������������������������������������������������������������
+;┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖
 
 		cld
 		pop	cx			; XY1 = XY2
@@ -889,7 +889,7 @@ xloopn1:	stosw
 		ret
 
 
-;������������������������������������������������������������������������
+;┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖┬╖
 
 fin_poly:	xor	eax, eax		; no_poly
 		ret
@@ -930,16 +930,16 @@ cfg:		mov	ax, [esi]		;      C1
 		mov	dx, [esi+4]		; DX = Y1
 		add	esi, 6
 
-		cmp	cx, word ptr[ClipXmin]	; test si X0 clipp�
-		jl	cfg0			; oui clipp�
+		cmp	cx, word ptr[ClipXmin]	; test si X0 clipp├⌐
+		jl	cfg0			; oui clipp├⌐
 
 		mov	[edi], bp
-		mov	[edi+2], cx		; pas clipp� on stock
+		mov	[edi+2], cx		; pas clipp├⌐ on stock
 		mov	[edi+4], bx
 		add	edi, 6
 		inc	word ptr[newboucle]	; 1 point de plus
 
-		cmp	ax, word ptr[ClipXmin]	; test si X1 clipp�
+		cmp	ax, word ptr[ClipXmin]	; test si X1 clipp├⌐
 		jl      cfg1			; si oui on clip
 
 cfg2:		mov	bp, [coul1]
@@ -950,9 +950,9 @@ cfg2:		mov	bp, [coul1]
 		jnz	cfg
 		jmp	cfg3			; fini
 
-cfg0:		cmp	ax, word ptr[ClipXmin]	; test si X2 clipp�
-		jl	cfg2			; oui 1 et 2 clipp� on oublie le 1
-						; 1er clipp� on ajuste coor
+cfg0:		cmp	ax, word ptr[ClipXmin]	; test si X2 clipp├⌐
+		jl	cfg2			; oui 1 et 2 clipp├⌐ on oublie le 1
+						; 1er clipp├⌐ on ajuste coor
 cfg1:           ; BP = C0
 		; CX = X0		BX < DX
 		; BX = Y0
@@ -964,7 +964,7 @@ cfg1:           ; BP = C0
 		push	edx
 		push	[coul1]
 
-		cmp	ax, cx			; Ajuste X0 X1 pour clip 2 poly coll�s
+		cmp	ax, cx			; Ajuste X0 X1 pour clip 2 poly coll├⌐s
 		jl	cfg4
 		xchg	eax, ecx
 		xchg	edx, ebx
@@ -1014,7 +1014,7 @@ cfg3:		mov	eax, [offtabpoly]	; inversion pointeurs buffer
 		mov	[offtabpoly], esi
 
 		movsw
-		movsd				; transitivit� der point
+		movsd				; transitivit├⌐ der point
 
 		mov	ax, [newboucle]
 		mov	[boucle], ax
@@ -1045,16 +1045,16 @@ cfg:		mov	ax, [esi]		;      C1
 		mov	dx, [esi+4]		; DX = Y1
 		add	esi, 6
 
-		cmp	cx, word ptr[ClipXmax]	; test si X0 clipp�
-		jg	cfg0			; oui clipp�
+		cmp	cx, word ptr[ClipXmax]	; test si X0 clipp├⌐
+		jg	cfg0			; oui clipp├⌐
 
 		mov	[edi], bp
-		mov	[edi+2], cx		; pas clipp� on stock
+		mov	[edi+2], cx		; pas clipp├⌐ on stock
 		mov	[edi+4], bx
 		add	edi, 6
 		inc	word ptr[newboucle]	; 1 point de plus
 
-		cmp	ax, word ptr[ClipXmax]	; test si X1 clipp�
+		cmp	ax, word ptr[ClipXmax]	; test si X1 clipp├⌐
 		jg      cfg1			; si oui on clip
 
 cfg2:		mov	bp, [coul1]
@@ -1065,9 +1065,9 @@ cfg2:		mov	bp, [coul1]
 		jnz	cfg
 		jmp	cfg3			; fini
 
-cfg0:		cmp	ax, word ptr[ClipXmax]	; test si X2 clipp�
-		jg	cfg2			; oui 1 et 2 clipp� on oublie le 1
-						; 1er clipp� on ajuste coor
+cfg0:		cmp	ax, word ptr[ClipXmax]	; test si X2 clipp├⌐
+		jg	cfg2			; oui 1 et 2 clipp├⌐ on oublie le 1
+						; 1er clipp├⌐ on ajuste coor
 cfg1:           ; BP = C0
 		; CX = X0		BX < DX
 		; BX = Y0
@@ -1080,7 +1080,7 @@ cfg1:           ; BP = C0
 		push	[coul1]
 
 
-		cmp	ax, cx			; Ajuste X0 X1 pour clip 2 poly coll�s
+		cmp	ax, cx			; Ajuste X0 X1 pour clip 2 poly coll├⌐s
 		jl	cfg4
 		xchg	eax, ecx
 		xchg	edx, ebx
@@ -1131,7 +1131,7 @@ cfg3:
 		mov	[offtabpoly], esi
 
 		movsw
-		movsd				; transitivit� der point
+		movsd				; transitivit├⌐ der point
 
 		mov	ax, [newboucle]
 		mov	[boucle], ax
@@ -1163,16 +1163,16 @@ cfg:		mov	ax, [esi]		;      C1
 		mov	ax, [esi+4]		; AX = Y1
 		add	esi, 6
 
-		cmp	cx, word ptr[ClipYmin]	; test si Y0 clipp�
-		jl	cfg0			; oui clipp�
+		cmp	cx, word ptr[ClipYmin]	; test si Y0 clipp├⌐
+		jl	cfg0			; oui clipp├⌐
 
 		mov	[edi], bp
-		mov	[edi+2], bx		; pas clipp� on stock
+		mov	[edi+2], bx		; pas clipp├⌐ on stock
 		mov	[edi+4], cx
 		add	edi, 6
 		inc	word ptr[newboucle]	; 1 point de plus
 
-		cmp	ax, word ptr[ClipYmin]	; test si Y1 clipp�
+		cmp	ax, word ptr[ClipYmin]	; test si Y1 clipp├⌐
 		jl      cfg1			; si oui on clip
 
 cfg2:		mov	bp, [coul1]
@@ -1183,9 +1183,9 @@ cfg2:		mov	bp, [coul1]
 		jnz	cfg
 		jmp	cfg3			; fini
 
-cfg0:		cmp	ax, word ptr[ClipYmin]	; test si Y2 clipp�
-		jl	cfg2			; oui 1 et 2 clipp� on oublie le 1
-						; 1er clipp� on ajuste coor
+cfg0:		cmp	ax, word ptr[ClipYmin]	; test si Y2 clipp├⌐
+		jl	cfg2			; oui 1 et 2 clipp├⌐ on oublie le 1
+						; 1er clipp├⌐ on ajuste coor
 cfg1:           ; BP = C0
 		; BX = X0
 		; CX = Y0
@@ -1197,7 +1197,7 @@ cfg1:           ; BP = C0
 		push	eax
 		push	[coul1]
 
-		cmp	ax, cx			; Ajuste Y0 Y1 pour clip 2 poly coll�s
+		cmp	ax, cx			; Ajuste Y0 Y1 pour clip 2 poly coll├⌐s
 		jl	cfg4
 		xchg	edx, ebx
 		xchg	eax, ecx
@@ -1247,7 +1247,7 @@ cfg3:		mov	eax, [offtabpoly]	; inversion pointeurs buffer
 		mov	[offtabpoly], esi
 
 		movsw
-		movsd				; transitivit� der point
+		movsd				; transitivit├⌐ der point
 
 		mov	ax, [newboucle]
 		mov	[boucle], ax
@@ -1278,16 +1278,16 @@ cfg:		mov	ax, [esi]		;      C1
 		mov	ax, [esi+4]		; AX = Y1
 		add	esi, 6
 
-		cmp	cx, word ptr[ClipYmax]	; test si Y0 clipp�
-		jg	cfg0			; oui clipp�
+		cmp	cx, word ptr[ClipYmax]	; test si Y0 clipp├⌐
+		jg	cfg0			; oui clipp├⌐
 
 		mov	[edi], bp
-		mov	[edi+2], bx		; pas clipp� on stock
+		mov	[edi+2], bx		; pas clipp├⌐ on stock
 		mov	[edi+4], cx
 		add	edi, 6
 		inc	word ptr[newboucle]	; 1 point de plus
 
-		cmp	ax, word ptr[ClipYmax]	; test si Y1 clipp�
+		cmp	ax, word ptr[ClipYmax]	; test si Y1 clipp├⌐
 		jg      cfg1			; si oui on clip
 
 cfg2:		mov	bp, [coul1]
@@ -1298,9 +1298,9 @@ cfg2:		mov	bp, [coul1]
 		jnz	cfg
 		jmp	cfg3			; fini
 
-cfg0:		cmp	ax, word ptr[ClipYmax]	; test si Y2 clipp�
-		jg	cfg2			; oui 1 et 2 clipp� on oublie le 1
-						; 1er clipp� on ajuste coor
+cfg0:		cmp	ax, word ptr[ClipYmax]	; test si Y2 clipp├⌐
+		jg	cfg2			; oui 1 et 2 clipp├⌐ on oublie le 1
+						; 1er clipp├⌐ on ajuste coor
 cfg1:           ; BP = C0
 		; BX = X0
 		; CX = Y0
@@ -1312,7 +1312,7 @@ cfg1:           ; BP = C0
 		push	eax
 		push	[coul1]
 
-		cmp	ax, cx			; Ajuste Y0 Y1 pour clip 2 poly coll�s
+		cmp	ax, cx			; Ajuste Y0 Y1 pour clip 2 poly coll├⌐s
 		jl	cfg4
 		xchg	edx, ebx
 		xchg	eax, ecx
@@ -1362,7 +1362,7 @@ cfg3:		mov	eax, [offtabpoly]	; inversion pointeurs buffer
 		mov	[offtabpoly], esi
 
 		movsw
-		movsd				; transitivit� der point
+		movsd				; transitivit├⌐ der point
 
 		mov	ax, [newboucle]
 		mov	[boucle], ax
