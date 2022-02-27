@@ -402,15 +402,15 @@ void	PlayMusic( WORD num )
 
 #ifdef	CDROM
 
-	if( FlagVoiceCD		// voix sur CD music fm
+	if( FlagVoiceCD		// voix sur CD music fm // voices on music CD fm
 	OR (num < 1)
-	OR (num > 9) )		// ou jingle que FM
+	OR (num > 9) )		// ou jingle que FM // or jingle than FM
 	{
 		PlayMidiFile( num ) ;
 	}
-	else			// voix sur HD ponheur
+	else			// voix sur HD ponheur // voice on HD ponheur
 	{
-		PlayCdTrack( num ) ; // 1ere track = 2
+		PlayCdTrack( num ) ; // 1ere track = 2 // First track = 2
 	}
 
 #else
@@ -422,7 +422,7 @@ void	PlayMusic( WORD num )
 
 void	PlayMidiFile( WORD num )
 {
-	if( !Midi_Driver_Enable )	return ;// hum si on peut
+	if( !Midi_Driver_Enable )	return ;// hum si on peut // hm if it's possible
 
 #ifdef	CDROM
 	StopMusicCD() ;
