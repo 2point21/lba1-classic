@@ -58,21 +58,21 @@ WORD	GiveBalance( WORD xp, WORD yp, LONG volume, ULONG *volleft, ULONG *volright
 	if( (yp > 240+480)
 	OR  (yp < -240) )	return FALSE ;
 
-	// baisse volume vers le haut à partir de Y<0 jusqu'a -480
+	// baisse volume vers le haut à partir de Y<0 jusqu'a -480 // lowers volume upwards from Y<0 until -480
 	if( yp < 0 )
 	{
 		volume = RegleTrois32( 0, volume, 240, 240+yp ) ;
 		flag = 1 ;
 	}
-	// baisse volume vers le bas à partir de Y>479  jusqu'a 480+480
+	// baisse volume vers le bas à partir de Y>479  jusqu'a 480+480 // lowers volume downwards from Y>479 until 480+480
 	if( yp > 479 )
 	{
 		volume = RegleTrois32( 0, volume, 240, 240+480-yp ) ;
 		flag = 1 ;
 	}
 
-	// gere attenuation du volume sur le cote gauche
-	// utilise le volume eventuellement deja ajuste sur Y
+	// gere attenuation du volume sur le cote gauche // handles dimming the volume on the left
+	// utilise le volume eventuellement deja ajuste sur Y // uses the possibly already adjusted on Y
 	if( (xp >= -320) AND (xp < 0) )
 	{
 		*volleft  = RegleTrois32( 0, (volume*100)/128, 320, xp+320 ) ;
@@ -81,7 +81,7 @@ WORD	GiveBalance( WORD xp, WORD yp, LONG volume, ULONG *volleft, ULONG *volright
 		return TRUE ;
 	}
 
-	// gere attenuation du volume sur le cote droit
+	// gere attenuation du volume sur le cote droit // handles dimming the volume on the right
 	if( (xp >= 640) AND (xp < 640+320) )
 	{
 		*volleft  = 0 ;
@@ -90,8 +90,8 @@ WORD	GiveBalance( WORD xp, WORD yp, LONG volume, ULONG *volleft, ULONG *volright
 		return TRUE ;
 	}
 
-	// sinon gere la balance gauche/droite sur l'ecran
-	// l'eventuelle attenuation du volume sur Y est toujour la
+	// sinon gere la balance gauche/droite sur l'ecran // else handles the left/right balance on the screen
+	// l'eventuelle attenuation du volume sur Y est toujour la // the possible attenuation of the volume on Y is still here
 	if( (xp >= 0) AND (xp < 640) )
 	{
 		if (flag) volume = (volume*100)/128;
@@ -150,7 +150,7 @@ void	HQ_ChangeBalanceSamples( WORD oldxporg, WORD oldyporg )
 
 	for( n=0; n<nbsamp; n++ )
 	{
-		if( ptrlist->LongHandle != 123456 )	// son ambiance
+		if( ptrlist->LongHandle != 123456 )	// son ambiance // ambience sound
 		{
 			newxp = ptrlist->Info0>>16  - deltaxp ;
 			newyp = ptrlist->Info0&0xFFFF - deltayp ;
@@ -162,7 +162,7 @@ void	HQ_ChangeBalanceSamples( WORD oldxporg, WORD oldyporg )
 			}
 			else
 			{
-				// coupe ce sample longhandle plus tard
+				// coupe ce sample longhandle plus tard // cuts this sample longhandle later
 				WaveStopOne( ptrlist->LongHandle & 0xFFFF ) ;
 			}
 		}
@@ -191,19 +191,19 @@ void	GereAmbiance()
 
 		for( n=0; n<4; n++ )
 		{
-			if( !(SamplePlayed & (1<<sample)) ) /* si pas joue */
+			if( !(SamplePlayed & (1<<sample)) ) /* si pas joue */ /* if not played */
 			{
-				SamplePlayed |= (1<<sample) ;	/* marque le joué */
-				if( SamplePlayed == 15 ) /* tous joue */
+				SamplePlayed |= (1<<sample) ;	/* marque le joué */ /* marks the played */
+				if( SamplePlayed == 15 ) /* tous joue */ /* all play */
 					SamplePlayed = 0 ;
 
 				numsample = SampleAmbiance[sample] ;
-				if( numsample != -1 ) /* si defini */
+				if( numsample != -1 ) /* si defini */ /* if defined */
 				{
 					decal = SampleRnd[sample] ;
 					repeat = SampleRepeat[sample] ;
 
-/*					if( repeat == 0 ) // infini
+/*					if( repeat == 0 ) // infini // infinite
 					{
 						if( WaveInList( numsample ) )
 						{
@@ -215,7 +215,7 @@ void	GereAmbiance()
 							0x1000+Rnd(decal)-(decal/2),
 							repeat, 110, 110 ) ;
 
-					// info son ambiance
+					// info son ambiance // info ambience sound
 //					WaveGiveInfo0( longhandle, 123456 ) ;
 					break ;
 				}
@@ -402,15 +402,15 @@ void	PlayMusic( WORD num )
 
 #ifdef	CDROM
 
-	if( FlagVoiceCD		// voix sur CD music fm
+	if( FlagVoiceCD		// voix sur CD music fm // voice on CD music fm
 	OR (num < 1)
-	OR (num > 9) )		// ou jingle que FM
+	OR (num > 9) )		// ou jingle que FM // or jingle than FM
 	{
 		PlayMidiFile( num ) ;
 	}
-	else			// voix sur HD ponheur
+	else			// voix sur HD ponheur // voice on HD ponheur
 	{
-		PlayCdTrack( num ) ; // 1ere track = 2
+		PlayCdTrack( num ) ; // 1ere track = 2 // first track = 2
 	}
 
 #else
@@ -422,7 +422,7 @@ void	PlayMusic( WORD num )
 
 void	PlayMidiFile( WORD num )
 {
-	if( !Midi_Driver_Enable )	return ;// hum si on peut
+	if( !Midi_Driver_Enable )	return ;// hum si on peut // hm if it's possible
 
 #ifdef	CDROM
 	StopMusicCD() ;
